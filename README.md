@@ -1,6 +1,6 @@
 # Codespaces ♥️ Railsチュートリアル
 
-本リポジトリは[Railsチュートリアル](https://railstutorial.jp/)の [GitHub Codespaces](https://github.co.jp/features/codespaces) 用テンプレートです。2022年11月に公開された[GitHub公式のRailsテンプレート](https://github.com/github/codespaces-rails)を、[Railsチュートリアル](https://railstutorial.jp)用にカスタマイズしたものです。
+本リポジトリは[Railsチュートリアル](https://railstutorial.jp/)の [GitHub Codespaces](https://github.co.jp/features/codespaces) 用テンプレートをもとに、dockerでも実行できるようにしたものです。2022年11月に公開された[GitHub公式のRailsテンプレート](https://github.com/github/codespaces-rails)を、[Railsチュートリアル](https://railstutorial.jp)用にカスタマイズしたものです。
 
 - [:computer: GitHub Codespaces 対応！環境構築が不要に（解説動画付き） - note](https://note.com/yasslab/n/n427c56266295)
 - [:newspaper: GitHub Codespaces が全ユーザーに無料提供へ、毎月60時間分 - Publickey](https://www.publickey1.jp/blog/22/github_codespaces60jetbrainsjupyterlabide.html)
@@ -22,6 +22,14 @@
   [![GitHub Top](https://i.gyazo.com/b5bad7bc8318837b67def1643a52b955.png)](https://github.co.jp/)
 
 <br>
+
+## Docker 使い方
+1. [Docker](https://www.docker.com/ja-jp/)をインストールする
+2. 以下のコマンドをプロジェクトのルートディレクトリで実行する
+```
+docker build
+docker-compse up
+```
 
 ## Codespaces 使い方
 
