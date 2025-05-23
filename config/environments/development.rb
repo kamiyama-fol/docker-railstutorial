@@ -81,4 +81,8 @@ Rails.application.configure do
   config.hosts << pf_host
 
   config.action_cable.allowed_request_origins = ["https://#{pf_host}"]
+
+  # Allow access to web-console from Docker host
+  config.web_console.permissions = '192.168.0.0/16'
+
 end
