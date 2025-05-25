@@ -30,6 +30,22 @@
 docker build
 docker-compse up
 ```
+3. ターミナルをもう一枚開いて、`docker-compose exec -it web bash`を実行することでrailsのコマンドを実行することができます。
+
+### エラーが出た場合（順次更新します）
+#### `rails credentials:edit`が実行してこんなエラーが出る
+```
+No $EDITOR to open file in. Assign one like this:
+
+EDITOR="mate --wait" bin/rails credentials:edit
+
+For editors that fork and exit immediately, it's important to pass a wait flag,
+otherwise the credentials will be saved immediately with no chance to edit.
+```
+CUIしかないDockerコンテナでGUIのテキストエディタであるmateを指定されても使えない。という内容のエラーです。なのでコンテナ内で
+`export EDITOR="vim" && rails credentials:edit`
+
+を実行すると、使用するエディタをvimと明示的に定義することで対応できます。（もちろんnanoでもOK）
 
 ## Codespaces 使い方
 
