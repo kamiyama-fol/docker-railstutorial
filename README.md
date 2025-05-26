@@ -46,7 +46,7 @@ CUIしかないDockerコンテナでGUIのテキストエディタであるmate�
 `export EDITOR="vim" && rails credentials:edit`
 
 を実行すると、使用するエディタをvimと明示的に定義することで対応できます。（もちろんnanoでもOK）
-
+<!--
 ## Codespaces 使い方
 
 以下の手順で、Codespaces を利用した環境構築が行えます 🛠
@@ -121,7 +121,7 @@ RuboCop によるコード整形、Ruby 公式デバッガーなどの拡張機�
 </details>
 
 <br><br>
-
+-->
 ## 制作・ライセンス
 
 Copyright &copy; [YassLab](http://yasslab.jp/) Inc.<br>
