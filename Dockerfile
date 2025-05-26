@@ -5,7 +5,8 @@ RUN apt-get update -qq && apt-get install -y \
   build-essential \
   libsqlite3-dev \
   nodejs \
-  curl
+  curl \
+  vim
 
 # 作業ディレクトリ作成
 WORKDIR /app
@@ -13,6 +14,7 @@ WORKDIR /app
 # Gemfile 関連をコピーして bundle install
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
+
 
 # 残りのファイルをコピー
 COPY . .
